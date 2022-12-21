@@ -9,4 +9,4 @@ const nftSchema = new Schema({
 
 const Nft = mongoose.model('Nft', productSchema);
 
-module.exports = Product;
+module.exports = Nft;

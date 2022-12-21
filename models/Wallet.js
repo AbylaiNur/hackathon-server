@@ -7,6 +7,6 @@ const WalletSchema = new Schema({
     wallet_address: String,
 })
 
-const Nft = mongoose.model('Nft', productSchema);
+const Wallet = mongoose.model('Wallet', productSchema);
 
-module.exports = Product;
+module.exports = Wallet;
