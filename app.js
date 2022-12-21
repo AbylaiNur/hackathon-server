@@ -31,13 +31,13 @@ app.post("/nfts", async (req, res) => {
   res.send(nft);
 });
 
-app.delete("/users/:id", async (req, res) => {
-  const user = await User.findByIdAndDelete(req.params.id);
+app.delete("/users", async (req, res) => {
+  const user = await User.deleteMany({});
   res.send(user);
 });
 
-app.delete("/nfts/:id", async (req, res) => {
-  const nft = await Nft.findByIdAndDelete(req.params.id);
+app.delete("/nfts", async (req, res) => {
+  const nft = await Nft.deleteMany({});
   res.send(nft);
 });
 
