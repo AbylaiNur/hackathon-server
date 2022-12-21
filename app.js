@@ -1,10 +1,12 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
-const PORT = process.env.PORT || 3000;
+const dotenv = require("dotenv");
+dotenv.config();
 const userRouter = require("./routes/userRouter");
 const nftRouter = require("./routes/nftRouter");
 
+const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 mongoose.set("strictQuery", false);
