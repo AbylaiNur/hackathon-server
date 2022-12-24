@@ -1,0 +1,27 @@
+GET http://localhost:3000/nfts HTTP/1.1
+
+###
+
+POST http://localhost:3000/nfts HTTP/1.1
+content-type: application/json
+
+{
+  "companyName": "FTX Kazakhstan",
+  "name": "Girl on the beach",
+  "address": "mzKurw9GnbYuV1CU2WzPf6V9T6SRA9hxZS"
+}
+
+###
+
+POST http://localhost:3000/nfts HTTP/1.1
+content-type: application/json
+
+{
+  "companyName": "FTX Russia",
+  "name": "Putin on the beach",
+  "address": "n2Jau71MMCfjENXdHbSzRpJ1s4n7fP9bE1"
+}
+
+###
+
+DELETE http://localhost:3000/nfts HTTP/1.1DELETE http://localhost:3000/users HTTP/1.1
