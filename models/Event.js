@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const User = require("./User");
 
 const userSchema = new Schema({
   fullName: { type: String, required: true },
@@ -13,7 +12,7 @@ const eventSchema = new Schema({
   maxGuest: { type: Number, required: true },
   dateStart: { type: Date, required: true },
   image: { type: String, required: true },
-  tokens: { type: [userSchema], required: true },
+  tokens: { type: [userSchema], required: false },
   dateDeath: { type: Date, required: true },
 });
 

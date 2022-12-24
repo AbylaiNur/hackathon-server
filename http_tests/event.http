@@ -2,7 +2,7 @@ GET http://localhost:3000/events HTTP/1.1
 
 ###
 
-POST http://localhost:3000/nfts HTTP/1.1
+POST http://localhost:3000/events HTTP/1.1
 content-type: application/json
 
 # organizationName: { type: String, required: true },
@@ -25,10 +25,10 @@ DELETE http://localhost:3000/events HTTP/1.1
 
 ###
 
-POST http://localhost:3000/addUser HTTP/1.1
+POST http://localhost:3000/events/addUser HTTP/1.1
 content-type: application/json
 
 {
-  "eventId": "change_to_your_event_id",
-  "userId": "change_to_your_user_id"
+  "eventId": "63a6ce53c2067721b479c671",
+  "userId": "63a6ce76c2067721b479c673"
 }
