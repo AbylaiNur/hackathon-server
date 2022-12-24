@@ -1,13 +1,19 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-const User = require("User");
+const User = require("./User");
+
+const userSchema = new Schema({
+  fullName: { type: String, required: true },
+  email: { type: String, required: true },
+  walletAddress: { type: String, required: true }
+});
 
 const eventSchema = new Schema({
   organizationName: { type: String, required: true },
   maxGuest: { type: Number, required: true },
   dateStart: { type: Date, required: true },
   image: { type: String, required: true },
-  tokens: { type: [User], required: true },
+  tokens: { type: [userSchema], required: true },
   dateDeath: { type: Date, required: true },
 });
 
